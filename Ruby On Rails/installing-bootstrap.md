@@ -4,7 +4,7 @@ Add bootstrap gem to gem file
 
 `gem 'bootstrap-sass', '~> 3.3.6'`
 
-ensure rails sass gem is installed
+ensure rails sass gem is already in your gem file and installed installed
 
 `gem 'sass-rails', '>= 3.2'`
 
@@ -16,12 +16,7 @@ then run
 > make sure to restart server after installing any gems for them to take effect.
 
 
-Go to assets to open the **application.css** file and add
-
-```
-@import "bootstrap-sprockets";
-@import "bootstrap";
-```
+Go to assets to open the **application.css** file
 
 Change **application.css** to **application.scss**
 
@@ -31,6 +26,15 @@ remove the 2 lines from the **application.scss**
 *= require_self
 *= require_tree .
 ```
+
+Add these 2 lines of code to the now empty scss file
+
+```
+@import "bootstrap-sprockets";
+@import "bootstrap";
+```
+
+
 
 Add Bootstrap jQuery  to gem fule
 
