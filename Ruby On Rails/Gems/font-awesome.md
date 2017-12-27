@@ -23,8 +23,10 @@ Just an icon with a link to a path
 ```<%= link_to fa_icon('pencil-square-o'), edit_blog_path(blog) %> ```
 
 Delete icon with delete path
+
 ```<%= link_to fa_icon('trash'), blog, method: :delete, data: { confirm: 'Are you sure?' } %>```
 
 Icon, with text, linked to outside source
+
 ```<a href="github.com"><%= fa_icon "github", text: "my github" %></a>```
 
