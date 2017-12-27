@@ -1,11 +1,11 @@
-###Gem Name
-##Gem Overview
+### Gem Name
+## Gem Overview
 What the gem does
 
-##Installation Instructions
+## Installation Instructions
 How to install and setup gem
 
-##Usage
+## Usage
 how to use the gem
 
 **Rubygems.org Link**

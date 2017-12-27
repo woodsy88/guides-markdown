@@ -19,8 +19,9 @@ Adding a video tag to the view, video neeeds to be in assetpipeline
 
 
 Show the distance of which a Model instance was creared
-``Created <%= distance_of_time_in_words(comment.created_at, Time.now)   %> ago```
-
+```
+Created <%= distance_of_time_in_words(comment.created_at, Time.now)   %> ago
+```
 
 When you dont want to show item.thumb_image IF item.thumb_image is empty(nil). if you dont have an thumb_image it doesnt throw an error   
     

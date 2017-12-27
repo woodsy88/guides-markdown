@@ -1,5 +1,5 @@
 
-#Step 1
+# Step 1
 ## Creating App
 
 
@@ -33,7 +33,7 @@ Open **routes.rb** and set the pages controller home action to the root page
 
 ---
 
-###Next set up your github repo
+### Next set up your github repo
 
 first, type in ```git init``` to initialize local repository
 
