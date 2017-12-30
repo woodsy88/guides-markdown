@@ -33,3 +33,35 @@ When you dont want to show item.thumb_image IF item.thumb_image is empty(nil).if
 <%= image_tag portfolio_item.thumb_image, 'thumb' unless portfolio_item.thumb_image.nil? %>
 ```
 
+
+Show a string as a formatted phone numbers
+
+```<%= number_to_phone "5555555555" %>```
+
+```<%= number_to_currency "150" %>```
+
+```<%= number_to_percentage "45.4" %>```
+
+```<%= number_with_delimiter "6000000" %>```
+
+Show the current users first name if there is a current user
+
+```<%= current_user.first_name if current_user  %>```
+
+Show current users role attribute from the db
+
+```<%=  current_user.role %>```
+
+Putting a path in the ```<a> href```
+
+```<a href="<%= about_me_path %>" class="btn btn-lg btn-secondary">Learn More</a>```
+
+Do code block, if logged in as :site_admin (admin gem from portfolio)
+
+```
+<% if logged_in?(:site_admin) %>
+do something
+<% end %>
+
+```
+

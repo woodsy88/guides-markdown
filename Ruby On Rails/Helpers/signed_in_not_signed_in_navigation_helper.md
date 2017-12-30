@@ -40,7 +40,7 @@ Create a new directory to hold the 2 partials you are going to split the logic f
 
 ```app/views/layouts/navigation/collapsible_elements```
 
-Inside the directory create two files: ```_signed_in_links.html.erb``` and ```_non_signed_in_links.html.erb```. Now cut the content from ```_collapsible_elements.html.erb``` file’s if else statements and paste it to the corresponding partials. The partials should look like this:
+Inside the directory create two files: ```_signed_in_links.html.erb``` and ```_non_signed_in_links.html.erb```. Now cut the content from ```_collapsible_elements.html.erb```(the code snippet at the top) file’s if else statements and paste it to the corresponding partials. The partials should look like this:
 
 ```_signed_in_links.html.erb```
 
