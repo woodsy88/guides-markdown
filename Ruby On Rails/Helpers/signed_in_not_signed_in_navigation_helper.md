@@ -1,6 +1,7 @@
 ## Creating a helper to show certain nav links to a signed in user and certain nav links to an unsigned in user
 
-Create a new collapsible_elements directory inside the ```navigation directory```.
+
+Create a new directory to hold the 2 partials you are going to split the logic from the view (nav bar) into. For this example we will create a collapsible_elements directory inside the ```navigation directory``` in the views.
 
 ```app/views/layouts/navigation/collapsible_elements```
 
@@ -42,9 +43,10 @@ Now inside the r```_collapsible_elements.html.erb filer```, instead of if else s
 ```html
 <div class="collapse navbar-collapse navbar-right" id="navbar-collapsible-content">
   <ul class="nav navbar-nav ">
-    **<%= render collapsible_links_partial_path %>**
+    <%= render collapsible_links_partial_path %>
   </ul>
-</div>>```                                    
+</div>>
+```                                    
 
 
 ```collapsible_links_partial_path``` is the method we are going to define inside the ```NavigationHelper```. Open or Create ```navigation_helper.rb``` in the helpers directory
@@ -65,6 +67,8 @@ module NavigationHelper
   
 end
 ```
+
+> Make sure the file paths are correct for the desired partials                
 
 The ```collapsible_links_partial_path```  - If a user is signed in, return a corresponding partial’s path. If a user is not signed in, return another partial’s path.
 
