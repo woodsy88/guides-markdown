@@ -36,7 +36,7 @@ Add these 2 lines of code to the now empty scss file
 
 
 
-Add Bootstrap jQuery  to gem fule
+Add Bootstrap jQuery  to gem file
 
 ```gem 'jquery-rails'```
 
@@ -51,7 +51,7 @@ Last step is to require Bootstrap and jQuery in the application’s JavaScript f
 //= require bootstrap-sprockets
 ```
 
-> put require jquery at the very top and require bootstrap-sprockets at the very bottom, below require tree
+> add require jquery at the very top and require bootstrap-sprockets at the very bottom, below require tree
 ___
 
 
@@ -59,4 +59,3 @@ ___
 
 ## Installing Bootstrap 4 in Rails
 
-books 

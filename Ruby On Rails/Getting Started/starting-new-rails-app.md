@@ -1,7 +1,4 @@
-
-# Step 1
 ## Creating App
-
 
 **Go to the folder you want to create your project in**
 
