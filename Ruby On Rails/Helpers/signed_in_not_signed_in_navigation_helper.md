@@ -3,8 +3,10 @@
 
 We have a nav bar view with too much logic in it (the if else statements). Below is the example
 
+the ```_collapsible_elements.html.erb``` below is where the nav bar collapsible elements are.
+
 ```html
-<!-- Collect the nav links, forms, and other content for toggling -->
+
   <div class="collapse navbar-collapse navbar-right" id="navbar-collapsible-content">
     <ul class="nav navbar-nav ">
    <% if user_signed_in? %>
@@ -31,7 +33,7 @@ We have a nav bar view with too much logic in it (the if else statements). Below
     <% end # if user is signed it %>
     <%= render collapsible_links_partial_path %>
     </ul>
-  </div><!-- navbar-collapse -->
+  </div>
   ```
 
 Create a new directory to hold the 2 partials you are going to split the logic from the view (nav bar) into. For this example we will create a collapsible_elements directory inside the ```navigation directory``` in the views.
@@ -118,5 +120,5 @@ end
 
 **Repositiry Links**
 
-[Colllabfield Branch](https://www.google.com))
+[Colllabfield Branch](https://github.com/woodsy88/collabfield/commit/53e7701db4e80de3748f37ed525104419ff9937e)
 
