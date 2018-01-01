@@ -13,6 +13,6 @@
 ```ruby
 u = User.last
 b = Blog.last
-Comment.create!(user_id: u.id, blog_id: b.id, content: "SOme COntent")
+Comment.create!(user_id: u.id, blog_id: b.id, content: "Some COntent")
 ```
 
