@@ -12,7 +12,7 @@ Add the gem  ```gem 'factory_girl_rails'``` to the ```test group``` in the gem f
 
 Run ```bundle install```
 
-> Factory girl gem as been depricated and it now uses ```factory_bot```
+> Factory girl gem as been deprecated and it now uses ```factory_bot```
 
 ## Usage
 
@@ -26,7 +26,13 @@ We will use ```specs/factories/users.rb``` as an example
 
 **Rubygems.org Link**
 
-[I'm an inline-style link](https://www.google.com)
+[factory_girl_rails](https://rubygems.org/gems/factory_girl_rails)
+
+[factory_bot](https://rubygems.org/gems/factory_bot)
+
+**Updating to factory bot guide**
+
+[upgrading to factory_bot](https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md)
 
 **Documentation Link**
 
@@ -34,6 +40,6 @@ We will use ```specs/factories/users.rb``` as an example
 
 **Repositiry Links**
 
-[Installed factory girl, set up factories for users and posts](https://github.com/woodsy88/overtime-app-main/commit/b58535998d02917499dff690d1abb9905ce7ad4f
+[Installed factory girl, set up factories for users and posts](https://github.com/woodsy88/overtime-app-main/commit/b58535998d02917499dff690d1abb9905ce7ad4f)
 
 [Created model test data with factory girl](https://github.com/woodsy88/overtime-app-main/commit/e7646447d39f1108b404e10e7079d423122bad8c)
