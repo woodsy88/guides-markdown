@@ -4,7 +4,7 @@ Add font awesome to gem file
 
 ```gem 'font-awesome-rails'```
 
-Then import dont awesome in application.scss
+Then import font awesome in application.scss
 
 ```@import "font-awesome";```
 
@@ -29,4 +29,10 @@ Delete icon with delete path
 Icon, with text, linked to outside source
 
 ```<a href="github.com"><%= fa_icon "github", text: "my github" %></a>```
+
+Adding a custom class to the icons to change their colors
+
+```<%= link_to fa_icon('trash'), post_path(post), id: "delete_#{post.id}_from_index", class: 'index-icons', method: :delete, data: { confirm: "Are you sure?" }  %>```
+
+```<%= link_to fa_icon('pencil-square-o'), edit_post_path(post), class: 'index-icons', id: "edit_#{post.id}" if policy(post).update? %>```
 
