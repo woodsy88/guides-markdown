@@ -1,4 +1,5 @@
 ## Resource generator
+
 Generates Model, Controller, but no views
 
 ```rails g resource Post date:date rationale:text```
@@ -13,6 +14,7 @@ With a reference to user and blog table
 
 
 ## Controller Generators
+
 Generates controller and corresponding views
 
 Generates Controller, with 3 empty methods inside and the corresponding view files
@@ -23,6 +25,7 @@ Generates Controller, with 3 empty methods inside and the corresponding view fil
 
 
 ## Model Generators
+
 Generates just the model
 
 ```rails g model Skill title:string percent:integer```
@@ -31,10 +34,12 @@ Generates Model with belongs_to association to another model
 
 ```rails g model Technology name:string portfolio:references```
 
+create just a model
 
-
+```rails g model post```
 
 ## Scaffoldings
+
 Generates Model, Controller, Views and tests
 
 ```rails g scaffold Blog title:string body:text```

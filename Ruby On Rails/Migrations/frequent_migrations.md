@@ -3,7 +3,7 @@ Adding an enum to posts model
 
 ```rails g migration add_status_to_posts status:integer```
 
-adds a user_id column to posts 
+adds a user_id column to posts
 
 ```rails g migration add_users_to_posts user:references```
 
@@ -22,3 +22,6 @@ Add slug col to blog table of type string that has to be unique
 
 ```rails g migration add_slug_to_topics slug:string```
 
+Add a column called overtime_request to the posts table of the type decimal
+
+```rails g migration add_post_hour_request_to_posts overtime_request:decimal```
