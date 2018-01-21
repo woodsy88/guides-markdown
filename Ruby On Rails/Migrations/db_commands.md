@@ -15,3 +15,8 @@ rollback the last migration
 If you want to rollback a specific migration with a version you should do:
 
 ```rake db:migrate:down VERSION=YOUR_MIGRATION_VERSION```
+
+
+## Bundle commands
+
+```bundle exec rails db:migrate```

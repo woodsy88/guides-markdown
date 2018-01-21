@@ -34,7 +34,7 @@ Now before we can use this file let's make sure that we add it to the gitignore 
 /.env
 ```
 
-Now we can add our credentials like this:
+Now we can add our credentials to the ```.env``` file like this:
 
 ```
 TWILIO_ACCOUNT_SID=YOURACCOUNTSID
@@ -54,6 +54,42 @@ And this should print out the phone number
 
 >if you run into any bugs with this, it could be caused by spring, you can fix this by typing ```spring stop``` and it will stop spring, then reenter the above env command into console
 
+-----
+
+## Testing Twillio
+
+in sms_tool.rb we have
+
+```ruby
+module SmsTool
+  account_sid = ENV['TWILIO_ACCOUNT_SID']
+  auth_token = ENV['TWILIO_AUTH_TOKEN']
+
+  @client = Twilio::REST::Client.new account_sid, auth_token
+
+  def self.send_sms(number:, message:)
+    @client.messages.create(
+      from: ENV['TWILIO_PHONE_NUMBER'],
+      to: "+1#{number}",
+      body: "#{message}"
+    )
+
+    puts "Sending SMS..."
+    puts "#{message} to #{number}"
+  end
+end
+```
+
+to test our code, open ```rails c```
+
+and run ```SmsTool.send_sms(number: '6475670072', message: "Look at me I am in a text")```
+
+Your phone number should receive a text
+
+
+
+-----
+
 **Rubygems.org Link**
 
 [twilio-ruby](https://rubygems.org/gems/twilio-ruby)
@@ -66,3 +102,5 @@ And this should print out the phone number
 https://rails.devcamp.com/trails/rest-microservices/campsites/sms-messages
 
 https://rails.devcamp.com/rest-microservices/sms-messages/securing-credentials-in-a-rails-app-with-dotenv
+
+https://rails.devcamp.com/rest-microservices/sms-messages/implementing-ability-send-sms-messages-rails

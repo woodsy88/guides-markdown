@@ -4,7 +4,7 @@
 
 you can use
 
-```<%= render @posts %>```
+```<%= render @posts %>``` in the view
 
 Because post objects belong to the Post class, Rails automatically tries to render the ```_post.html.erb``` partial template which is located ```views/posts/_post.html.erb```
 
@@ -13,25 +13,58 @@ Because post objects belong to the Post class, Rails automatically tries to rend
 in the ```views/posts/_post.html.erb```
 
 ```html
-<div class="col-sm-3 single-post-card" id=<%= post_path(post.id) %>>
-  <div class="card">
-    <div class="card-block">
-      <h4 class="post-text">
-        <%= truncate(post.title, :length => 60) %>
-      </h4>
-      <div class="post-content">
-        <div class="posted-by">Posted by <%= post.user.name %></div>
         <h3><%= post.title %></h3>
         <p><%= post.content %></p>
-        <%= link_to "I'm interested", post_path(post.id), class: 'interested' %>
-      </div>
-    </div>
-  </div><!-- card -->
-</div><!-- col-sm-3 -->
+
 ```
 
 This will render each Post item
 
+
 -----
 
 
+You can use an if statement in a partial
+
+```<%= render 'shared/audit_log_tab' if policy(AuditLog).index? %>```
+
+to add logic to render the partial or not
+
+
+------
+
+## Rendering Custom Partial with Custom controller call
+
+Have to use render partial when your passing local variables to it
+
+```<%= render partial: 'pending_approval', locals: { pending_approvals: @pending_approvals} %>```
+
+corresponding partial is ```_pending_approval.html.erb```
+
+>notice pending_approval.each is a local variable
+
+> This seems the best solution for when your rendering a partial, thats file name (and instance variable name) is different from the controller, view, model names.
+
+```
+<% pending_approvals.each do |pending_approval|  %>
+    <div class='homepage-block col-md-3'>
+        <h4><%= pending_approval.user.full_name %></h4>
+        <p>
+            <span class="pending-details">Date submitted:</span>
+            <%= pending_approval.date %>
+        </p>
+        <p>
+            <span class="pending-details">Rationale</span>
+            <%= truncate pending_approval.rationale, length: 42 %>
+        </p>
+    </div>
+<% end %>
+```
+
+controller action
+
+```
+  def homepage
+    @pending_approvals = Post.where(status: 'submitted')
+  end
+```

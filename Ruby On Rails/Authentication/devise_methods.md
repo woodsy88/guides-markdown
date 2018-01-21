@@ -1,4 +1,4 @@
-## Devise Methods
+## Devise Methods - VIEWS
 
 **User Signed**
 
@@ -9,3 +9,16 @@
 <% end # if user is signed it %>```
 
 ```sign_in``` method is one of the Devise helper methods.
+
+
+Current User
+
+```<% if current_user %>```
+
+
+
+## Devise methods
+
+```user_id: User.last.id```
+
+

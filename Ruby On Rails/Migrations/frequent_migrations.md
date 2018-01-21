@@ -25,3 +25,8 @@ Add slug col to blog table of type string that has to be unique
 Add a column called overtime_request to the posts table of the type decimal
 
 ```rails g migration add_post_hour_request_to_posts overtime_request:decimal```
+
+
+Add a column called phone number to users that takes type string
+
+```rails g migration add_phone_to_users phone:string```

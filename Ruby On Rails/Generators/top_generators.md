@@ -10,7 +10,9 @@ With a reference to user and blog table
 
 ```rails g resource Comment content:text user:references blog:references```
 
+Generate a model with user reference and 2 date attributes with a status attribute that is an integer and an enum
 
+```rails g resource AuditLog user:references status:integer start_date:date end_date:date```
 
 
 ## Controller Generators

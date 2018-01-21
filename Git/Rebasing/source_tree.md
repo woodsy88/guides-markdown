@@ -1,3 +1,5 @@
+## Using Source Tree
+
 1) switch to rails 4.2 develop branch and pull from rails 4.2 origin branch
 
 2) Switch back to the branch you are working on
