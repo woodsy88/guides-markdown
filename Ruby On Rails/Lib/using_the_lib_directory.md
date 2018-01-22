@@ -5,8 +5,7 @@ sits outside the rest of the core application
 it can be treated like a helper module, or a gem
 
 
-
-## Creating a module
+## Creating a module - using the lib directory
 
 first open up ```config/application.rb```
 

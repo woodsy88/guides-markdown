@@ -5,7 +5,7 @@ class Post < AuditLog
   enum status: { pending: 0, confirmed: 1, rejected: 2 }
 end```
 
-##TEsing a enum in the rails console
+##Testing a enum in the rails console
 
 Change the enum to confirmed
 
