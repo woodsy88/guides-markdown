@@ -59,3 +59,6 @@ ___
 
 ## Installing Bootstrap 4 in Rails
 
+git repo for installing bootstrap 4
+
+https://github.com/woodsy88/book-app/pull/1/files
