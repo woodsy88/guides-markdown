@@ -1,17 +1,17 @@
 
-Open heroku logs
+**Open heroku logs**
 
 ```heroku logs -n 250```
 
 ```heroku logs```
 
-Open heroku console
+**Open heroku console**
 
 ```heroku run rails c```
 
 --------
 
-Reset DB
+**Reset DB**
 
 ```heroku pg:reset DATABASE```
 
@@ -25,18 +25,18 @@ Reset DB
 
 --------
 
-Check if your connected to heroku
+**Check if your connected to heroku**
 
 ```git remote -v```
 
 ------------
 
-Open your newly created app
+**Open your newly created app**
 
 ```heroku open```
 
 ---------
 
-restarts the server, good idea whenever you do any big changes to the production db
+**restarts the server, good idea whenever you do any big changes to the production db**
 
 ```heroku restart```
