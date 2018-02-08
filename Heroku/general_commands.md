@@ -2,7 +2,6 @@
 
 ```heroku run rails c```
 
-```git push heroku master```
 
 ```heroku logs```
 
@@ -39,9 +38,12 @@ Push code up to heroku
 >after first push you can just use ```git push heroku```
 
 
-To seed your heroku db with data from your seeds file
+-------
 
-You could also run:
+
+##To seed your heroku db with data from your seeds file
+
+run:
 
 ```heroku run rake db:migrate```
 
@@ -66,7 +68,7 @@ Open your newly created app
 
 ---------
 
-## How to clean out and seed a Rails app database on heroku
+## Clean out DB and re-seed database on heroku
 
 Since heroku doesn't allow for destructive commands, such as:
 
@@ -78,7 +80,7 @@ Delete Seed Data
 
 ```heroku pg:reset```
 
-Seed Data
+The re-Seed Data
 
 ```heroku run rake db:migrate```
 
