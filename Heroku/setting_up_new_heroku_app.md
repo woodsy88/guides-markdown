@@ -1,14 +1,14 @@
 ## Setting up new heroku app
 
-Create new heroku app
+**Create new heroku app**
 
 ```heroku create app-name```
 
-Push code from master to heroku
+**Push code from master to heroku**
 
 >Make sure that you have commited and pushed all changes up to your remote master
 
-Push code up to heroku
+**Push code up to heroku**
 
 ```git push heroku master```
 
