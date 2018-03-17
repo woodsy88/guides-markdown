@@ -22,3 +22,8 @@ Current User
 ```user_id: User.last.id```
 
 
+## controllers
+
+by putting the below line in any controller it will require an autheticated user for it
+
+```before_action :authenticate_user!```

@@ -1,4 +1,4 @@
-## Installing Bootstrap 3 in Rails
+# Installing Bootstrap 3 in Rails
 
 Add bootstrap gem to gem file
 
@@ -62,3 +62,7 @@ ___
 git repo for installing bootstrap 4
 
 https://github.com/woodsy88/book-app/pull/1/files
+
+## intsall bootsrap views for devise and entire app
+
+https://www.udemy.com/the-complete-ruby-on-rails-developer-course/learn/v4/t/lecture/3852900?start=0
